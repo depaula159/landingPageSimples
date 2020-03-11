@@ -1,0 +1,179 @@
+// Variaveis
+$cor-padrao: #af0000;
+$cor-drop: #6e0909;
+$cor-rodape: #0f0f0f;
+$fonte-padrao: "Roboto";
+$cor-contraste: #fff;
+$cor-info: rgb(235, 235, 235);
+// Mixins
+// Encadeamentos
+nav {
+  height: 45px;
+  background-color: $cor-padrao;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    font-family: $fonte-padrao;
+    color: $cor-contraste;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .brandMob {
+    display: none;
+  }
+
+  ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0px;
+
+    li {
+      font-family: $fonte-padrao;
+      color: $cor-contraste;
+      margin-right: 12px;
+      font-size: 0.9rem;
+      transition: all 0.4s ease-in;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        -webkit-transition: all 0.4s ease-in;
+        -moz-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+      }
+    }
+  }
+  #menuMob {
+    display: none;
+    margin: 0px;
+    color: $cor-contraste;
+    font-family: $fonte-padrao;
+    font-size: 1.2em;
+  }
+}
+
+.menuMobDrop {
+  display: none;
+  background-color: $cor-drop;
+  height: auto;
+  padding: 12px;
+
+  ul {
+    list-style-type: disc;
+    display: table;
+    margin: 0 auto;
+    li {
+      font-family: $fonte-padrao;
+      color: $cor-contraste;
+      margin-right: 12px;
+      font-size: 0.9rem;
+      transition: all 0.4s ease-in;
+      margin-bottom: 12px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        -webkit-transition: all 0.4s ease-in;
+        -moz-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+      }
+    }
+  }
+}
+header {
+  height: 600px;
+  background-color: #ddd;
+  background-image: url("../img/ft1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: $fonte-padrao;
+    color: $cor-contraste;
+  }
+  p {
+    font-family: $fonte-padrao;
+    color: $cor-contraste;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .row {
+    text-align: center;
+
+    .col-sm {
+      background-color: $cor-info;
+      padding: 16px;
+      margin: 16px;
+      border-radius: 5px;
+    }
+  }
+}
+.bannerInfo {
+  .msgBanner {
+    background-image: url("../img/ft2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    h2 {
+      color: $cor-contraste;
+      font-family: $fonte-padrao;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    label {
+      color: $cor-contraste;
+      font-family: $fonte-padrao;
+    }
+
+    input {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+footer {
+  height: 120px;
+  background-color: $cor-rodape;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    font-family: $fonte-padrao;
+    color: $cor-contraste;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  center {
+    small {
+      color: $cor-contraste;
+    }
+  }
+}
